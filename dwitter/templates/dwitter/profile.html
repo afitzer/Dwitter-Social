@@ -15,6 +15,7 @@
     <form method="post">
         {% csrf_token %}
         <div class="buttons has-addons">
+            <!-- sort new to old -->
             {% if profile in user.profile.follows.all %}
                 <button class="button is-success is-static">Follow</button>
                 <button class="button is-danger" name="follow" value="unfollow">Unfollow</button>
